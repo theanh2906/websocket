@@ -21,7 +21,7 @@ public class DemoApplication extends SpringBootServletInitializer {
 			public void addCorsMappings(CorsRegistry registry) {
 				registry
 						.addMapping("/api/**")
-						.allowedOrigins("http://localhost:8080", "http://localhost:4200", "https://benna.info", "http://45.32.60.127", "http://localhost:4200")
+						.allowedOrigins("http://localhost:8080", "http://localhost:4200", "https://benna.info", "http://45.32.60.127", "http://localhost:4000")
 						.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
 			}
 		};
