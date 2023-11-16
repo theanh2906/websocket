@@ -52,6 +52,8 @@ public class SocketController {
         headerAccessor.setLeaveMutable(true);
         simpMessagingTemplate.convertAndSendToUser(message.getTo(), "/private/user", out, headerAccessor.getMessageHeaders());
     }
+
     private static Logger LOG = LoggerFactory.getLogger(SocketController.class);
     @Autowired
     private SimpMessagingTemplate simpMessagingTemplate;
+}
