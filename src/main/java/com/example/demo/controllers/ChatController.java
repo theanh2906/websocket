@@ -13,7 +13,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/api")
 public class ChatController {
     @GetMapping("")
     public ModelAndView home() {
