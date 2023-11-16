@@ -13,7 +13,7 @@ public class WebSocketMessageBrokerConfiguration implements WebSocketMessageBrok
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry
                 .addEndpoint("/api/websocket")
-                .setAllowedOrigins("http://localhost:4200", "http://benna.info:8000")
+                .setAllowedOrigins("http://localhost:4200", "http://benna.info:8000", "http://localhost:4000")
                 .withSockJS();
     }
 
